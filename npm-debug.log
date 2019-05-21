@@ -1,0 +1,114 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@4.1.2
+3 info using node@v8.11.4
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/var/www/mysql-wrapper',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /home/anons/.npm/mysql-wrapper/1.0.0/package.tgz not in flight; packing
+9 verbose correctMkdir /home/anons/.npm correctMkdir not in flight; initializing
+10 warn prepublish-on-install As of npm@5, `prepublish` scripts will run only for `npm publish`.
+11 warn prepublish-on-install (In npm@4 and previous versions, it also runs for `npm install`.)
+12 warn prepublish-on-install See the deprecation note in `npm help scripts` for more information.
+13 info lifecycle mysql-wrapper@1.0.0~prepublish: mysql-wrapper@1.0.0
+14 verbose lifecycle mysql-wrapper@1.0.0~prepublish: unsafe-perm in lifecycle true
+15 verbose lifecycle mysql-wrapper@1.0.0~prepublish: PATH: /usr/local/lib/node_modules/npm/bin/node-gyp-bin:/var/www/mysql-wrapper/node_modules/.bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/lib/jvm/java-11-oracle/bin:/usr/lib/jvm/java-11-oracle/db/bin:/usr/local/go/bin
+16 verbose lifecycle mysql-wrapper@1.0.0~prepublish: CWD: /var/www/mysql-wrapper
+17 silly lifecycle mysql-wrapper@1.0.0~prepublish: Args: [ '-c',
+17 silly lifecycle   'node_modules/babel-cli/bin/babel.js src --out-dir lib' ]
+18 silly lifecycle mysql-wrapper@1.0.0~prepublish: Returned: code: 0  signal: null
+19 info lifecycle mysql-wrapper@1.0.0~prepare: mysql-wrapper@1.0.0
+20 silly lifecycle mysql-wrapper@1.0.0~prepare: no script for prepare, continuing
+21 verbose tar pack [ '/home/anons/.npm/mysql-wrapper/1.0.0/package.tgz',
+21 verbose tar pack   '/var/www/mysql-wrapper' ]
+22 verbose tarball /home/anons/.npm/mysql-wrapper/1.0.0/package.tgz
+23 verbose folder /var/www/mysql-wrapper
+24 verbose addLocalTarball adding from inside cache /home/anons/.npm/mysql-wrapper/1.0.0/package.tgz
+25 verbose correctMkdir /home/anons/.npm correctMkdir not in flight; initializing
+26 silly cache afterAdd mysql-wrapper@1.0.0
+27 verbose afterAdd /home/anons/.npm/mysql-wrapper/1.0.0/package/package.json not in flight; writing
+28 verbose correctMkdir /home/anons/.npm correctMkdir not in flight; initializing
+29 verbose afterAdd /home/anons/.npm/mysql-wrapper/1.0.0/package/package.json written
+30 silly publish { name: 'mysql-wrapper',
+30 silly publish   version: '1.0.0',
+30 silly publish   main: 'index.js',
+30 silly publish   license: 'MIT',
+30 silly publish   scripts:
+30 silly publish    { prepublish: 'node_modules/babel-cli/bin/babel.js src --out-dir lib' },
+30 silly publish   babel: { presets: [ 'es2015' ] },
+30 silly publish   dependencies:
+30 silly publish    { 'babel-cli': '^6.26.0',
+30 silly publish      'babel-core': '^6.26.3',
+30 silly publish      'babel-preset-es2015': '^6.24.1',
+30 silly publish      mysql: '^2.16.0' },
+30 silly publish   readme: 'ERROR: No README data found!',
+30 silly publish   _id: 'mysql-wrapper@1.0.0',
+30 silly publish   _shasum: '7485ee13a24237ec0296e4ac2bdd02c775db7d8a',
+30 silly publish   _from: '.' }
+31 info lifecycle mysql-wrapper@1.0.0~prepublishOnly: mysql-wrapper@1.0.0
+32 silly lifecycle mysql-wrapper@1.0.0~prepublishOnly: no script for prepublishOnly, continuing
+33 verbose getPublishConfig undefined
+34 silly mapToRegistry name mysql-wrapper
+35 silly mapToRegistry using default registry
+36 silly mapToRegistry registry https://registry.npmjs.org/
+37 silly mapToRegistry data Result {
+37 silly mapToRegistry   raw: 'mysql-wrapper',
+37 silly mapToRegistry   scope: null,
+37 silly mapToRegistry   escapedName: 'mysql-wrapper',
+37 silly mapToRegistry   name: 'mysql-wrapper',
+37 silly mapToRegistry   rawSpec: '',
+37 silly mapToRegistry   spec: 'latest',
+37 silly mapToRegistry   type: 'tag' }
+38 silly mapToRegistry uri https://registry.npmjs.org/mysql-wrapper
+39 verbose publish registryBase https://registry.npmjs.org/
+40 silly publish uploading /home/anons/.npm/mysql-wrapper/1.0.0/package.tgz
+41 verbose request uri https://registry.npmjs.org/mysql-wrapper
+42 verbose request sending authorization for write operation
+43 info attempt registry request try #1 at 1:07:32 AM
+44 verbose request using bearer token for auth
+45 verbose request id d0dc1de7c53d30d9
+46 http request PUT https://registry.npmjs.org/mysql-wrapper
+47 http 403 https://registry.npmjs.org/mysql-wrapper
+48 verbose headers { date: 'Tue, 21 May 2019 19:22:33 GMT',
+48 verbose headers   'content-type': 'application/json',
+48 verbose headers   'transfer-encoding': 'chunked',
+48 verbose headers   connection: 'keep-alive',
+48 verbose headers   'set-cookie':
+48 verbose headers    [ '__cfduid=d63e6f0f19b9be228c083f20858a5face1558466553; expires=Wed, 20-May-20 19:22:33 GMT; path=/; domain=.registry.npmjs.org; HttpOnly' ],
+48 verbose headers   'cf-ray': '4da8eb764db2aaa8-SIN',
+48 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+48 verbose headers   vary: 'Accept-Encoding',
+48 verbose headers   server: 'cloudflare',
+48 verbose headers   'content-encoding': 'gzip' }
+49 verbose request invalidating /home/anons/.npm/registry.npmjs.org/mysql-wrapper on PUT
+50 error publish Failed PUT 403
+51 verbose stack Error: You do not have permission to publish "mysql-wrapper". Are you logged in as the correct user? : mysql-wrapper
+51 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:304:12)
+51 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:292:14)
+51 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:218:7
+51 verbose stack     at Gunzip.onEnd (zlib.js:131:5)
+51 verbose stack     at emitNone (events.js:111:20)
+51 verbose stack     at Gunzip.emit (events.js:208:7)
+51 verbose stack     at endReadableNT (_stream_readable.js:1064:12)
+51 verbose stack     at _combinedTickCallback (internal/process/next_tick.js:138:11)
+51 verbose stack     at process._tickCallback (internal/process/next_tick.js:180:9)
+52 verbose statusCode 403
+53 verbose pkgid mysql-wrapper
+54 verbose cwd /var/www/mysql-wrapper
+55 error Linux 4.18.0-20-generic
+56 error argv "/usr/bin/node" "/usr/local/bin/npm" "publish"
+57 error node v8.11.4
+58 error npm  v4.1.2
+59 error code E403
+60 error You do not have permission to publish "mysql-wrapper". Are you logged in as the correct user? : mysql-wrapper
+61 error If you need help, you may report this error at:
+61 error     <https://github.com/npm/npm/issues>
+62 verbose exit [ 1, true ]
